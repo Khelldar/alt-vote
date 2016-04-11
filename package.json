@@ -1,0 +1,30 @@
+{
+  "name": "alt-vote",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
+    "esdoc": "^0.3.1",
+    "eslint": "^1.2.1",
+    "sinon-promises": "^1.0.0",
+    "mocha": "^2.2.5",
+    "mocha-multi": "^0.7.1",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "maintainers": [
+    {
+      "name": "Chris Langager",
+      "email": "christopher.langager@gmail.com"
+    }
+  ],
+  "license": "ISC"
+}
