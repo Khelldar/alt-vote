@@ -5,7 +5,7 @@ const sinon = require('sinon');
 const sinonChai = require('sinon-chai');
 const sinonStubPromise = require('sinon-promises');
 const chaiAsPromised = require('chai-as-promised');
-const run = require('./..');
+const run = require('./..').election;
 const util = require('util')
 
 
@@ -35,11 +35,11 @@ describe('altVote', () => {
       const results = run(
         ['A', 'B', 'C'],
         [
-          ['A'],
-          ['A'],
-          ['B'],
-          ['B'],
-          ['C', 'A'],
+          ['A', 'B', 'C'],
+          ['A', 'B', 'C'],
+          ['B', 'C', 'A'],
+          ['B', 'C', 'A'],
+          ['C', 'A', 'B'],
         ]
       );
       expect(results[0]['A'].length).to.equal(2);

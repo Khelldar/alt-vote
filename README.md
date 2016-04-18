@@ -1,4 +1,4 @@
-exports a function that takes two parameters:
+## election
 - Array of candidate names
 - array of ballots.
 
@@ -7,7 +7,7 @@ Ex.
 ```javascript
 const altVote = require('alt-vote');
 
-const results = altVote(['A', 'B', 'C'],
+const results = altVote.election(['A', 'B', 'C'],
 [
   ['A'],
   ['A'],
